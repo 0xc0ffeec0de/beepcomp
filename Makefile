@@ -1,7 +1,7 @@
 all: normal
 
 normal:
-	g++ -o beepcomp_dev Config.cpp MData.cpp DData.cpp Astro.cpp LFO.cpp Fall.cpp OSC.cpp NOSC.cpp DelayLine.cpp MML.cpp MPlayer.cpp Dialog.cpp Button.cpp Knob.cpp GUI.cpp main.cpp beepcomp.res -I./include -L./lib -lsfml-graphics -lsfml-window -lsfml-system -lsfml-main -lmp3lame lib/libsndfile-1.lib lib/portaudio_x86.lib
+	g++ -o beepcomp_dev Config.cpp MData.cpp DData.cpp Astro.cpp LFO.cpp Fall.cpp OSC.cpp NOSC.cpp DelayLine.cpp MML.cpp MPlayer.cpp Dialog.cpp Button.cpp Knob.cpp GUI.cpp main.cpp beepcomp.res -I./include -I./include/linux -L./lib -lsfml-graphics -lsfml-window -lsfml-system -lsfml-main -lmp3lame lib/libsndfile-1.lib lib/portaudio_x86.lib
 
 short:
 	g++ -o beepcomp_dev Config.cpp MData.o DData.o Astro.o LFO.o Fall.o OSC.o NOSC.o DelayLine.o MML.cpp MPlayer.cpp Dialog.cpp Button.cpp Knob.cpp GUI.cpp main.cpp beepcomp.res -I./include -L./lib -lsfml-graphics -lsfml-window -lsfml-system -lsfml-main -lmp3lame lib/libsndfile-1.lib lib/portaudio_x86.lib
